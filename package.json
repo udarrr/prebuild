@@ -1,9 +1,11 @@
 {
-  "name": "prebuild",
-  "version": "11.0.4",
+  "name": "@udarrr/prebuild",
+  "version": "11.0.6",
   "description": "A command line tool for easily making prebuilt binaries for multiple versions of node, electron or node-webkit on a specific platform",
   "scripts": {
     "test": "verify-travis-appveyor && tape test && npm run lint",
+    "pack": "npm pack",
+    "publish_package": "npm publish --tag latest --access=public",
     "lint": "standard"
   },
   "keywords": [
@@ -32,7 +34,7 @@
     "mkdirp": "^0.5.1",
     "napi-build-utils": "^1.0.1",
     "node-abi": "^3.0.0",
-    "node-gyp": "^6.0.1",
+    "node-gyp": "9.3.1",
     "node-ninja": "^1.0.1",
     "noop-logger": "^0.1.0",
     "npm-which": "^3.0.1",
